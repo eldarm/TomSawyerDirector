@@ -68,7 +68,6 @@ public class Drone {
 	  g.fillOval(x - size / 2, y - size / 2, size, size);
 	  g.setColor(Color.BLACK);
 	  g.fillArc(x - size / 2, y - size / 2, size, size, (int)Math.toDegrees(angle) + 90 - 30, 60);
-	  //g.setColor(Color.BLUE);
 	  g.drawOval(x - size / 2, y - size / 2, size, size);
 	}
 

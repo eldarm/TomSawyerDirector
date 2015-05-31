@@ -121,7 +121,8 @@ public class MainScreen extends JFrame {
 	    g = paintPanel.getGraphics();
 	    Dimension d = paintPanel.getSize();
 	    g.clearRect(0, 0, d.width, d.height);
-        c.Draw(g, d.height, d.width);		
+        c.Draw(g, d.height, d.width);	
+        g.drawString("Noise: " + noiseText.getText(), 5, 15);
 	}
 
 	public static void main(String[] args) {
