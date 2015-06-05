@@ -7,10 +7,8 @@ import java.util.Random;
 import com.eldar.TomSawyerDirector.Corp;
 
 public class Drone {
-	private static int glevel = 0;
 	protected static Random rand = new Random();
 	
-	public int level;
 	public Drone parent;
 	public Drone left;
 	public Drone right;
@@ -28,7 +26,6 @@ public class Drone {
 	
 	public void Paint(double angle) {
 		if (Double.isNaN(this.angle)) {
-			level = ++glevel;
 			this.angle = angle;
 			if (parent != null) parent.Paint(mutate(angle));
 			if (left != null)   left.Paint(mutate(angle));
